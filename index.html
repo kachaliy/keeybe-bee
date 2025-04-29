@@ -8,6 +8,7 @@
       content="Keybe Bee — the future of portable ergonomic typing."
     />
     <title>Keybe Bee™</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <style>
       * {
         box-sizing: border-box;
@@ -22,9 +23,9 @@
         overflow-x: hidden;
       }
       .overlay {
-        background-color: rgba(0, 0, 0, 0.7);
+        background-color: rgba(0, 0, 0, 0.85);
         min-height: 100vh;
-        padding: 3rem 1rem;
+        padding: 5rem 2rem;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -36,18 +37,21 @@
         margin-bottom: 0.5em;
       }
       h1 {
-        font-size: 3em;
+        font-size: 4em;
+        color: #ffd700;
+        text-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
+        animation: glow 3s ease-in-out infinite alternate;
       }
       h2 {
-        font-size: 2em;
+        font-size: 2.2em;
         color: #f0f0f0;
       }
       p {
-        font-size: 1.2em;
-        max-width: 800px;
-        line-height: 1.6em;
+        font-size: 1.3em;
+        max-width: 900px;
+        line-height: 1.7em;
         text-align: center;
-        margin: 1em auto;
+        margin: 1.2em auto;
         color: #ccc;
       }
       strong {
@@ -55,50 +59,58 @@
       }
       footer {
         margin-top: 4em;
-        font-size: 0.9em;
-        color: #666;
+        font-size: 0.95em;
+        color: #777;
         text-align: center;
+      }
+      @keyframes glow {
+        from {
+          text-shadow: 0 0 10px #ffd700;
+        }
+        to {
+          text-shadow: 0 0 25px #fff000, 0 0 40px #ffd700;
+        }
       }
     </style>
   </head>
   <body>
     <div class="overlay">
-      <h1>Keybe Bee™</h1>
-      <p>The keyboard made to move with you.</p>
+      <h1 class="reveal">Keybe Bee™</h1>
+      <p class="reveal">The keyboard made to move with you.</p>
 
-      <h2>It didn't start at a desk.</h2>
-      <p>
+      <h2 class="reveal">It didn't start at a desk.</h2>
+      <p class="reveal">
         It started with a hum. A buzz. A question.<br />
         What if a keyboard was made to <strong>bee</strong> with you — not
         behind you?
       </p>
 
-      <p>
+      <p class="reveal">
         Not in a lab. Not on a desk.<br />
         But on the knees of a tired traveler in a cramped airplane seat.<br />
         Of a writer in a quiet café. A coder on a couch.<br />
         Of a dreamer tired of reaching too far.
       </p>
 
-      <p>
+      <p class="reveal">
         The world got lighter, faster, freer —<br />
         but keyboards stayed heavy, stuck, still.<br />
         Rigid. Flat. Desks-only. Life-denying.
       </p>
 
-      <p>
+      <p class="reveal">
         So we made something else.<br />
         Something that folds. That flows. That follows you.
       </p>
 
-      <h2>We made Keybe Bee™</h2>
-      <p>
+      <h2 class="reveal">We made Keybe Bee™</h2>
+      <p class="reveal">
         A keyboard that knows your lap.<br />
         That rests like wings.<br />
         That hums with motion — and ends with control.
       </p>
 
-      <p>
+      <p class="reveal">
         Right in the center — where your thumbs naturally rest —<br />
         lives the brain of the bee: <strong>a precision trackpad.</strong><br />
         No reaching. No awkward side swipes. No external mouse.<br />
@@ -106,27 +118,37 @@
         <em>Steve Jobs would have nodded.</em>
       </p>
 
-      <p>
+      <p class="reveal">
         It’s soft. It’s silent. It’s ready to travel.<br />
         And more than anything — it just makes sense.
       </p>
 
-      <p>
+      <p class="reveal">
         It folds. It breathes. It works on your lap —<br />
         because that’s where you live.
       </p>
 
-      <h2>Join the swarm.</h2>
-      <p>
+      <h2 class="reveal">Join the swarm.</h2>
+      <p class="reveal">
         Bee first to know. Bee part of the revolution. 🐝<br />
         <em>(Coming soon — May 2025)</em>
       </p>
 
-      <footer>
+      <footer class="reveal">
         <p>Keybe Bee™ — a portable revolution in typing comfort.</p>
         <p>Company: Keybe Bee Ltd.<br />Est. 2025</p>
         <p>Bee free. Bee precise. Bee with us.</p>
       </footer>
     </div>
+
+    <script>
+      ScrollReveal().reveal(".reveal", {
+        distance: "40px",
+        duration: 1200,
+        easing: "ease-in-out",
+        origin: "bottom",
+        interval: 200,
+      });
+    </script>
   </body>
 </html>
