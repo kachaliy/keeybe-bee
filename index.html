@@ -9,89 +9,112 @@
     />
     <title>Keybe Bee™</title>
     <style>
+      * {
+        box-sizing: border-box;
+      }
       body {
-        background-color: #000;
-        color: #fff;
-        font-family: "Helvetica Neue", Arial, sans-serif;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        padding: 2rem;
-        text-align: center;
-        height: 100vh;
         margin: 0;
+        padding: 0;
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        background: url("images/1.jpg") no-repeat center center fixed;
+        background-size: cover;
+        color: #fff;
+        overflow-x: hidden;
+      }
+      .overlay {
+        background-color: rgba(0, 0, 0, 0.7);
+        min-height: 100vh;
+        padding: 3rem 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      h1,
+      h2 {
+        text-align: center;
+        margin-top: 1.5em;
+        margin-bottom: 0.5em;
       }
       h1 {
-        font-size: 2.8em;
-        margin-bottom: 0.3em;
+        font-size: 3em;
       }
       h2 {
-        font-size: 1.6em;
-        margin-top: 2em;
-        color: #ddd;
+        font-size: 2em;
+        color: #f0f0f0;
       }
       p {
-        font-size: 1.1em;
-        color: #aaa;
-        max-width: 600px;
-        line-height: 1.5em;
+        font-size: 1.2em;
+        max-width: 800px;
+        line-height: 1.6em;
+        text-align: center;
+        margin: 1em auto;
+        color: #ccc;
+      }
+      strong {
+        color: #ffd700;
       }
       footer {
-        margin-top: 3em;
+        margin-top: 4em;
         font-size: 0.9em;
         color: #666;
+        text-align: center;
       }
     </style>
   </head>
   <body>
-    <h1>Keybe Bee™</h1>
-    <p>The keyboard made to move with you.</p>
+    <div class="overlay">
+      <h1>Keybe Bee™</h1>
+      <p>The keyboard made to move with you.</p>
 
-    <h2>It started on someone's knees.</h2>
-    <p>
-      Not on a desk. Not in a lab.<br />
-      But on the knees of a tired traveler in a cramped airplane seat.<br />
-      Of a writer in a quiet café.<br />
-      Of a dreamer in search of comfort, control, and freedom.
-    </p>
+      <h2>It didn't start at a desk.</h2>
+      <p>
+        It started with a hum. A buzz. A question.<br />
+        What if a keyboard was made to <strong>bee</strong> with you — not
+        behind you?
+      </p>
 
-    <p>
-      The world changed, but keyboards didn’t.<br />
-      They stayed bulky. Rigid. Designed for desks, not for life.
-    </p>
+      <p>
+        Not in a lab. Not on a desk.<br />
+        But on the knees of a tired traveler in a cramped airplane seat.<br />
+        Of a writer in a quiet café. A coder on a couch.<br />
+        Of a dreamer tired of reaching too far.
+      </p>
 
-    <p>
-      We asked a simple question:<br />
-      <strong
-        >What if a keyboard was made to follow you — not the other way
-        around?</strong
-      >
-    </p>
+      <p>
+        The world got lighter, faster, freer —<br />
+        but keyboards stayed heavy, stuck, still.<br />
+        Rigid. Flat. Desks-only. Life-denying.
+      </p>
 
-    <h2>So we made one.</h2>
-    <p>
-      Keybe Bee™ is a new kind of keyboard.<br />
-      It's soft. It's silent. It's ready to travel.<br />
-      And right in the middle, where it belongs,<br />
-      lives the heart of control: a trackpad.
-    </p>
+      <p>
+        So we made something else.<br />
+        Something that folds. That flows. That follows you.
+      </p>
 
-    <p>
-      It folds. It breathes. It works on your lap —<br />
-      because that's where you live.
-    </p>
+      <h2>We made Keybe Bee™</h2>
+      <p>
+        A keyboard that knows your lap.<br />
+        That rests like wings.<br />
+        That hums with motion, and ends with control: a central trackpad.
+      </p>
 
-    <h2>Join the swarm.</h2>
-    <p>
-      Bee first to know. Bee part of the revolution. 🐝<br />
-      <em>(Coming soon — May 2025)</em>
-    </p>
+      <p>
+        Quiet. Soft. Portable. Precise.<br />
+        Made not to sit.<br />
+        But to <strong>bee</strong>.
+      </p>
 
-    <footer>
-      <p>Keybe Bee™ — a portable revolution in typing comfort.</p>
-      <p>Company: Keybe Bee Ltd.<br />Est. 2025</p>
-      <p>Bee free. Bee precise. Bee with us.</p>
-    </footer>
+      <h2>Join the swarm.</h2>
+      <p>
+        Bee first to know. Bee part of the revolution. 🐝<br />
+        <em>(Coming soon — May 2025)</em>
+      </p>
+
+      <footer>
+        <p>Keybe Bee™ — a portable revolution in typing comfort.</p>
+        <p>Company: Keybe Bee Ltd.<br />Est. 2025</p>
+        <p>Bee free. Bee precise. Bee with us.</p>
+      </footer>
+    </div>
   </body>
 </html>
