@@ -8,75 +8,13 @@
       content="Keybe Bee — the future of portable ergonomic typing."
     />
     <title>Keybe Bee™</title>
+    <link rel="stylesheet" href="css/style.css" />
     <script src="https://unpkg.com/scrollreveal"></script>
-    <style>
-      * {
-        box-sizing: border-box;
-      }
-      body {
-        margin: 0;
-        padding: 0;
-        font-family: "Helvetica Neue", Arial, sans-serif;
-        background: url("images/1.jpg") no-repeat center center fixed;
-        background-size: cover;
-        color: #fff;
-        overflow-x: hidden;
-      }
-      .overlay {
-        background-color: rgba(0, 0, 0, 0.85);
-        min-height: 100vh;
-        padding: 5rem 2rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-      h1,
-      h2 {
-        text-align: center;
-        margin-top: 1.5em;
-        margin-bottom: 0.5em;
-      }
-      h1 {
-        font-size: 4em;
-        color: #ffd700;
-        text-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
-        animation: glow 3s ease-in-out infinite alternate;
-      }
-      h2 {
-        font-size: 2.2em;
-        color: #f0f0f0;
-      }
-      p {
-        font-size: 1.3em;
-        max-width: 900px;
-        line-height: 1.7em;
-        text-align: center;
-        margin: 1.2em auto;
-        color: #ccc;
-      }
-      strong {
-        color: #ffd700;
-      }
-      footer {
-        margin-top: 4em;
-        font-size: 0.95em;
-        color: #777;
-        text-align: center;
-      }
-      @keyframes glow {
-        from {
-          text-shadow: 0 0 10px #ffd700;
-        }
-        to {
-          text-shadow: 0 0 25px #fff000, 0 0 40px #ffd700;
-        }
-      }
-    </style>
   </head>
   <body>
     <div class="overlay">
       <h1 class="reveal">Keybe Bee™</h1>
-      <p class="reveal">The keyboard made to move with you.</p>
+      <p class="reveal subtitle">The keyboard made to move with you.</p>
 
       <h2 class="reveal">It didn't start at a desk.</h2>
       <p class="reveal">
@@ -140,15 +78,6 @@
         <p>Bee free. Bee precise. Bee with us.</p>
       </footer>
     </div>
-
-    <script>
-      ScrollReveal().reveal(".reveal", {
-        distance: "40px",
-        duration: 1200,
-        easing: "ease-in-out",
-        origin: "bottom",
-        interval: 200,
-      });
-    </script>
+    <script src="js/script.js"></script>
   </body>
 </html>

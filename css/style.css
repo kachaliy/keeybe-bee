@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", sans-serif;
+  background: url("../images/1.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.85);
+  min-height: 100vh;
+  padding: 5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 4em;
+  color: #ffd700;
+  text-shadow: 0 0 15px rgba(255, 215, 0, 0.4);
+  animation: glow 3s ease-in-out infinite alternate;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 1.4em;
+  color: #eee;
+  text-align: center;
+  margin-top: -1em;
+}
+
+h2 {
+  font-size: 2.2em;
+  color: #f0f0f0;
+  text-align: center;
+}
+
+p {
+  font-size: 1.3em;
+  max-width: 900px;
+  line-height: 1.7em;
+  text-align: center;
+  margin: 1.2em auto;
+  color: #ccc;
+}
+
+strong {
+  color: #ffd700;
+}
+
+footer {
+  margin-top: 4em;
+  font-size: 0.95em;
+  color: #777;
+  text-align: center;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #ffd700;
+  }
+  to {
+    text-shadow: 0 0 25px #fff000, 0 0 40px #ffd700;
+  }
+}
